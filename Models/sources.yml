@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: bronze_source
+    schema: bronze
+    tables:
+      - name: raw_crypto_market_data
