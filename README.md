@@ -68,7 +68,7 @@ The table below presents the core architectural blueprints, lineage outputs, and
   </tr>
   <tr>
     <td align="center" colspan="2" width="100%">
-      <img src="Docs/crypto_bronze_ingestion.png" alt="Airflow Bronze Ingestion DAG" width="50%"/>
+      <img src="Docs/crypto_bronze_ingestion-graph.png" alt="Airflow Bronze Ingestion DAG" width="50%"/>
       <br><b>5. Apache Airflow Bronze Ingestion DAG</b>
     </td>
   </tr>
