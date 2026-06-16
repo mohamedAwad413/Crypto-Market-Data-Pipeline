@@ -48,27 +48,27 @@ The table below presents the core architectural blueprints, lineage outputs, and
 <table align="center">
   <tr>
     <td align="center" width="50%">
-      <img src="docs/Dashboard-1.png" alt="Analytics Dashboard View 1" width="100%"/>
+      <img src="Docs/Dashboard-1.png" alt="Analytics Dashboard View 1" width="100%"/>
       <br><b>1. Dashboard Primary View</b>
     </td>
     <td align="center" width="50%">
-      <img src="docs/Dashboard-2.png" alt="Analytics Dashboard View 2" width="100%"/>
+      <img src="Docs/Dashboard-2.png" alt="Analytics Dashboard View 2" width="100%"/>
       <br><b>2. Dashboard Slicer Interaction</b>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="docs/Data pipeline architecture.png" alt="End to End Architecture" width="100%"/>
+      <img src="Docs/Data pipeline architecture.png" alt="End to End Architecture" width="100%"/>
       <br><b>3. Pipeline Architecture Design</b>
     </td>
     <td align="center" width="50%">
-      <img src="docs/Gold Layer.png" alt="Gold Models Lineage" width="100%"/>
+      <img src="Docs/Gold Layer.png" alt="Gold Models Lineage" width="100%"/>
       <br><b>4. dbt Gold Layer Models</b>
     </td>
   </tr>
   <tr>
     <td align="center" colspan="2" width="100%">
-      <img src="docs/crypto_bronze_ingestion.png" alt="Airflow Bronze Ingestion DAG" width="50%"/>
+      <img src="Docs/crypto_bronze_ingestion.png" alt="Airflow Bronze Ingestion DAG" width="50%"/>
       <br><b>5. Apache Airflow Bronze Ingestion DAG</b>
     </td>
   </tr>
