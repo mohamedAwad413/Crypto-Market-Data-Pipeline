@@ -1,73 +1,75 @@
-# Crypto Market Data Pipeline & Analytics Dashboard
+#  Crypto Market Data Pipeline & Analytics Dashboard
 
-An end-to-end Data Engineering pipeline designed to ingest, transform,
-and visualize cryptocurrency market data in real-time.
-This project implements a robust **Medallion Architecture**
-using modern data stack tools to orchestrate and model high-frequency financial metrics, 
-culminating in an executive-ready Power BI dashboard.
+An end-to-end Data Engineering pipeline designed to ingest, transform, and visualize cryptocurrency market data in real-time. This project implements a robust **Medallion Architecture** using modern data stack tools to orchestrate and model high-frequency financial metrics, culminating in an executive-ready Power BI dashboard.
 
 ---
 
-#  The Technical Stack
+## 🛠️ The Technical Stack
 
-## PostgreSQL
-PostgreSQL functions as the analytical data warehouse,
-storing all pipeline outputs within a structured Medallion Architecture framework.
-Data is organized across dedicated schemas:
+### PostgreSQL
+PostgreSQL functions as the analytical data warehouse, storing all pipeline outputs within a structured Medallion Architecture framework. Data is organized across dedicated schemas:
 
-Bronze Layer – Raw ingested API data
-Silver Layer – Cleaned and standardized datasets
-Gold Layer – Business-ready dimensional models and analytical tables
+* **Bronze Layer** – Raw ingested API data.
+* **Silver Layer** – Cleaned and standardized datasets.
+* **Gold Layer** – Business-ready dimensional models and analytical tables.
 
 This layered approach improves data quality, maintainability, and governance.
 
 ---
 
-#  Data Transformation & Dimensional Modeling
+## ⚙️ Data Transformation & Dimensional Modeling
 
-## dbt (Data Build Tool)
+### dbt (Data Build Tool)
 dbt powers the transformation layer by converting raw datasets into analytics-ready models. It is responsible for:
 
-Data cleansing and standardization
-Type casting and schema enforcement
-Deduplication and validation checks
-Building Fact and Dimension tables using the Kimball Dimensional Modeling approach
+* Data cleansing and standardization.
+* Type casting and schema enforcement.
+* Deduplication and validation checks.
+* Building Fact and Dimension tables using the Kimball Dimensional Modeling approach.
 
 ---
-#  Infrastructure & Development Environment
-## Docker & Docker Compose
 
+## 🐳 Infrastructure & Development Environment
+
+### Docker & Docker Compose
 Docker is used to containerize the entire platform, including Airflow and PostgreSQL services. This ensures:
 
-Environment consistency
-Simplified deployment
-Reproducible development workflows
-Platform portability across machines
+* Environment consistency.
+* Simplified deployment.
+* Reproducible development workflows.
+* Platform portability across machines.
 
 ---
 
-# Docements
+## 📊 Project Documentation & Visualizations
+
+The table below presents the core architectural blueprints, lineage outputs, and executive analytics dashboards generated across this data lifecycle:
 
 <table align="center">
   <tr>
     <td align="center" width="50%">
-      <img src="docs/Dashboard-1.png" alt="img-1" width="100%"/>
+      <img src="docs/Dashboard-1.png" alt="Analytics Dashboard View 1" width="100%"/>
+      <br><b>1. Dashboard Primary View</b>
     </td>
     <td align="center" width="50%">
-      <img src="docs/Dashboard-2.png" alt="img-2" width="100%"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="docs/Data pipeline architecture.png" alt="img-3" width="100%"/>
-    </td>
-    <td align="center" width="50%">
-      <img src="docs/Gold Layer.png" alt="img-4" width="100%"/>
+      <img src="docs/Dashboard-2.png" alt="Analytics Dashboard View 2" width="100%"/>
+      <br><b>2. Dashboard Slicer Interaction</b>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="docs/crypto_bronze_ingestion.png" alt="img-4" width="100%"/>
+      <img src="docs/Data pipeline architecture.png" alt="End to End Architecture" width="100%"/>
+      <br><b>3. Pipeline Architecture Design</b>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/Gold Layer.png" alt="Gold Models Lineage" width="100%"/>
+      <br><b>4. dbt Gold Layer Models</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2" width="100%">
+      <img src="docs/crypto_bronze_ingestion.png" alt="Airflow Bronze Ingestion DAG" width="50%"/>
+      <br><b>5. Apache Airflow Bronze Ingestion DAG</b>
     </td>
   </tr>
 </table>
